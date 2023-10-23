@@ -56,30 +56,28 @@ typedef enum
 #define CHANNEL_1_SRC       ((uint32_t) (GR7))
 #define CHANNEL_1_DEST      (1)
 #define CHANNEL_1_SAMPLE    (TSL_GROUP7_IO1)
-#define CHANNEL_1_CHANNEL   (TSL_GROUP7_IO3)
+#define CHANNEL_1_CHANNEL   (TSL_GROUP7_IO4)
 #define CHANNEL_2_SRC       ((uint32_t) (GR7))
 #define CHANNEL_2_DEST      (2)
 #define CHANNEL_2_SAMPLE    (TSL_GROUP7_IO1)
-#define CHANNEL_2_CHANNEL   (TSL_GROUP7_IO4)
-#define CHANNEL_3_SRC       ((uint32_t) (GR1))
+#define CHANNEL_2_CHANNEL   (TSL_GROUP7_IO3)
+#define CHANNEL_3_SRC       ((uint32_t) (GR7))
 #define CHANNEL_3_DEST      (3)
-#define CHANNEL_3_SAMPLE    (TSL_GROUP1_IO1)
-#define CHANNEL_3_CHANNEL   (TSL_GROUP1_IO2)
-#define CHANNEL_4_SRC       ((uint32_t) (GR7))
+#define CHANNEL_3_SAMPLE    (TSL_GROUP7_IO1)
+#define CHANNEL_3_CHANNEL   (TSL_GROUP7_IO2)
+#define CHANNEL_4_SRC       ((uint32_t) (GR1))
 #define CHANNEL_4_DEST      (4)
-#define CHANNEL_4_SAMPLE    (TSL_GROUP7_IO1)
-#define CHANNEL_4_CHANNEL   (TSL_GROUP7_IO2)
+#define CHANNEL_4_SAMPLE    (TSL_GROUP1_IO1)
+#define CHANNEL_4_CHANNEL   (TSL_GROUP1_IO4)
 /* Bank(s) definition */
 /* TOUCHKEYS bank(s) definition*/
 #define BANK_0_NBCHANNELS (2)
-#define BANK_1_NBCHANNELS (2)
-/* TOUCHKEYS_B bank(s) definition*/
-#define BANK_2_NBCHANNELS (1)
+#define BANK_1_NBCHANNELS (1)
+#define BANK_2_NBCHANNELS (2)
 
 /* User Parameters */
 extern CONST TSL_Bank_T MyBanks[];
 extern CONST TSL_TouchKey_T MyTKeys[];
-extern CONST TSL_TouchKeyB_T MyTKeysB[];
 extern CONST TSL_Object_T MyObjects[];
 extern TSL_ObjectGroup_T MyObjGroup;
 

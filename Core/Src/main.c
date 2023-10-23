@@ -114,17 +114,13 @@ void ProcessSensors(void)
    uint32_t idx_dr = 0;
 
    // STMStudio debug
-   for (idx = 0; idx < TSLPRM_TOTAL_TKEYS - 1; idx++)
+   for (idx = 0; idx < TSLPRM_TOTAL_TKEYS; idx++)
    {
      DS[idx_ds++] = MyTKeys[idx].p_Data->StateId;
      DD[idx_dd++] = MyTKeys[idx].p_ChD->Delta;
      DM[idx_dm++] = MyTKeys[idx].p_ChD->Meas;
      DR[idx_dr++] = MyTKeys[idx].p_ChD->Ref;
    }
-   	  DS[idx_ds++] = MyTKeysB[0].p_Data->StateId;
-      DD[idx_dd++] = MyTKeysB[0].p_ChD->Delta;
-      DM[idx_dm++] = MyTKeysB[0].p_ChD->Meas;
-      DR[idx_dr++] = MyTKeysB[0].p_ChD->Ref;
 
 	// TKEY 0
 	if (TEST_TKEY(0)) {
