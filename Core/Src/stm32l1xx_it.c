@@ -56,7 +56,7 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-
+extern PCD_HandleTypeDef hpcd_USB_FS;
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -212,6 +212,20 @@ void RCC_IRQHandler(void)
   /* USER CODE BEGIN RCC_IRQn 1 */
 
   /* USER CODE END RCC_IRQn 1 */
+}
+
+/**
+  * @brief This function handles USB low priority interrupt.
+  */
+void USB_LP_IRQHandler(void)
+{
+  /* USER CODE BEGIN USB_LP_IRQn 0 */
+
+  /* USER CODE END USB_LP_IRQn 0 */
+  HAL_PCD_IRQHandler(&hpcd_USB_FS);
+  /* USER CODE BEGIN USB_LP_IRQn 1 */
+
+  /* USER CODE END USB_LP_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

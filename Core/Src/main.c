@@ -20,6 +20,8 @@
 #include "main.h"
 #include "touchsensing.h"
 #include "ts.h"
+#include "usart.h"
+#include "usb_device.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -192,6 +194,8 @@ int main(void)
   MX_GPIO_Init();
   MX_TS_Init();
   MX_TOUCHSENSING_Init();
+  MX_USART1_UART_Init();
+  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
